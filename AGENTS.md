@@ -10,7 +10,7 @@ It reads the subscribers, checks an issue, and sends it to a practice mail serve
 - Use uv for everything (install, add packages, run scripts, run tests). Do not use pip, venv, or python directly.
 - Never use a real person's email address. Use `@example.com`, and `@resend.dev` for practice sends.
 - Commit and push after every step.
-- Behaviors first. I give the expected answers, you write them as checks, show them failing, then write the code.
+- Behaviors first. I give the expected answers, you write them as pytest tests in `test_mailroom.py` (one test per behavior, named for the behavior), show them failing with `uv run pytest`, then write the code.
 - Never read today's date inside the logic. Pass the run date in. Only the command line may read today's date.
 - When something breaks, show me the full error before changing anything.
 
