@@ -14,6 +14,7 @@ It reads the subscribers, checks an issue, and sends it to a practice mail serve
 - I decide the test cases and their answers. Never change an expected answer to make a test pass.
 - Never read today's date inside the logic. Pass the run date in. Only the command line may read today's date.
 - When something breaks, show me the full error before changing anything.
+- Count text length the way Python's `len()` counts (code points). An emoji with a skin tone, like 👍🏽, counts as 2.
 
 ## How I learn
 

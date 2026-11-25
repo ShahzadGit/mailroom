@@ -78,3 +78,10 @@ def test_no_footer_and_no_greeting_is_two_problems():
     text = text.replace("You're getting this because you joined the Admission waitlist.\n", "")
     text = text.replace("Unsubscribe: {{unsubscribe_url}}\n", "")
     assert len(mailroom.check_issue(text)) == 2
+
+
+def test_subject_length_counts_what_len_counts_so_an_emoji_with_skin_tone_is_two():
+    subject = "\U0001F44D\U0001F3FD Thanks for joining" + "!" * 30
+    assert len(subject) == 51
+    text = VALID_ISSUE.replace("Admissions 2026-27 open on Monday", subject)
+    assert len(mailroom.check_issue(text)) == 1
