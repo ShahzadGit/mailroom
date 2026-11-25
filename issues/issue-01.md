@@ -1,4 +1,4 @@
-You joined our waitlist because you love to here about new admissions. On Monday, The college is about open: Admissions-2026-27.
+You joined our waitlist because you love to hear about new admissions. On Monday, the college is about to open: Admissions-2026-27.
 
 As a founding member, you are getting this mail.
 
